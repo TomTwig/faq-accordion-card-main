@@ -5,8 +5,6 @@
 --color-text-neutral-veryDarkGrayishBlue :hsl(237, 12%, 33%);
 --color-text-neutral-darkGrayishBlue :hsl(240, 6%, 50%);
 
---color-divider-neutral-lightGrayishBlue :hsl(240, 5%, 91%);
-
 --color-gradient-softViolet:hsl(273, 75%, 66%);
 --color-gradient-softBlue:hsl(240, 73%, 65%);
 
@@ -27,7 +25,7 @@ img{
 }
 hr{
     margin-top: 1em;
-    color: var(--color-divider-neutral-lightGrayishBlue);
+    border-color: hsla(240, 5%, 91%, .5);
     border-width: 1px;
 }
 
@@ -61,14 +59,11 @@ body{
     position: relative;
 }
 .card__picture img:last-child{
-border: 2px solid green;
 position: absolute;
 width: 200px;
     left: -8em;
 }
-.cube{
-    
-}
+
 
 
 
@@ -82,8 +77,6 @@ width: 200px;
 .card__info{
     flex: 50%;
     font-size: 1rem;
-    
-    border: 1px solid green;
     padding: 2em;
     
 }
@@ -102,15 +95,26 @@ width: 200px;
 }
 .card__info__content-answer{
        display: none;
-    
 }
 
-.card__info__content-question{
-
- 
+.card__info__content-question{ 
 }
 
 .arrow{
-    
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
 }
+
+@keyframes rotateOpen {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(180deg)}  
+}
+
+@keyframes rotateClose {
+    from{transform: rotate(180deg)}
+    to{transform: rotate(0deg)}  
+}
+
+
 
