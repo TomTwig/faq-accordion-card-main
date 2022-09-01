@@ -25,6 +25,11 @@
 img{
     width: 100%;
 }
+hr{
+    margin-top: 1em;
+    color: var(--color-divider-neutral-lightGrayishBlue);
+    border-width: 1px;
+}
 
 body{
     font-size: 12px;
@@ -93,6 +98,7 @@ width: 200px;
     display: flex;
     margin: 1em 0;
     gap: 1em;
+    justify-content: space-between;
 }
 .card__info__content-answer{
        display: none;
