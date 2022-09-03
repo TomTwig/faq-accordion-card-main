@@ -19,9 +19,6 @@
     box-sizing: border-box;
 }
 
-img{
-width: 100%;
-}
 
 hr{
     margin-top: 1em;
@@ -43,10 +40,11 @@ body{
     display: flex;
     gap: 2em;
     justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 15px;
     background-image: url(images/bg-pattern-desktop.svg);
-    width: 1000px;
+    width: 900px;
 }
 
 .card__picture{
@@ -54,45 +52,33 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 2em 2em 2em 0;
-    
- 
+    padding: 4em 4em 4em 0;
 }
+
 .card__picture__container{
     overflow: hidden;
-
-
-    
 }
 
 .computer{
     position: relative;
     right: 100px;
-    
-
 }
 
 .cube{
     position: absolute;
-    left: -20%;
-    bottom: 15%;
-    
+    left: -92px;
+    top: 170px;
 }
-
-
-
-
-
-
-
 
 .card__info{
-    flex: 50%;
+    flex: 70%;
     font-size: 1rem;
-    padding: 2em;
+    margin-right: 6em;
+    padding: 2em 0 2em 0;
 }
 
-.card__info h1{margin-bottom: 1em;
+.card__info h1{
+    margin-bottom: 1em;
 }
 
 .card__info img{
@@ -100,7 +86,6 @@ body{
     height: 100%;
 }
 
-.card__info__content{}
 
 
 .card__info__content-question{
@@ -109,6 +94,7 @@ body{
     gap: 1em;
     justify-content: space-between;
 }
+
 .card__info__content-answer{
        display: none;
 }
