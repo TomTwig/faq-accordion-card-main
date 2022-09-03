@@ -43,7 +43,6 @@ body{
     display: flex;
     gap: 2em;
     justify-content: center;
-    padding: 4em;
     background-color: white;
     border-radius: 15px;
     background-image: url(images/bg-pattern-desktop.svg);
@@ -51,27 +50,39 @@ body{
 }
 
 .card__picture{
+    width: 50%;
     display: flex;
-    border: 2px solid red;
+    justify-content: center;
+    position: relative;
+    padding: 2em 2em 2em 0;
+    
+ 
+}
+.card__picture__container{
     overflow: hidden;
+
+
+    
 }
 
-.card__picture img{
-    object-fit: contain;
-    width: 500px;
-    height: auto;
+.computer{
     position: relative;
     right: 100px;
+    
+
 }
 
 .cube{
-    background-color: aqua;
-    right: 0;
-    object-fit: cover;
-    position: relative;
-    width: 50px;
-    height: 100px;
+    position: absolute;
+    left: -20%;
+    bottom: 15%;
+    
 }
+
+
+
+
+
 
 
 
@@ -86,9 +97,11 @@ body{
 
 .card__info img{
     width: 1em;
+    height: 100%;
 }
 
 .card__info__content{}
+
 
 .card__info__content-question{
     display: flex;
