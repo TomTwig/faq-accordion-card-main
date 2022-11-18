@@ -99,10 +99,19 @@ body{
        display: none;
 }
 
-.arrow{
+.rotateOpen{
+    animation-name: "rotateOpen";
     animation-duration: .2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; 
+}
+
+.rotateOpen{
+    animation: rotateOpen 0.5s ease 0.0s forwards;
+}
+
+.rotateClose{
+    animation: rotateClose 0.5s ease 0.0s backwards;
 }
 
 @keyframes rotateOpen {
